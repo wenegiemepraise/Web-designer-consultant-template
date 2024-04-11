@@ -88,3 +88,150 @@ nav a {
   text-align: center;
   color: black;
 }
+/*Main Content Styles */
+.software-projects {
+  background-color: rgb(16, 86, 0);
+}
+.software-projects,
+.projects {
+  padding: 10px;
+}
+.projects h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 35px;
+  width: 100%;
+  color: black;
+}
+.software-projects h2,
+.cta h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 35px;
+  width: 100%;
+  color: white;
+}
+.software-projects h5 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  width: 100%;
+  color: white;
+}
+.projects h5 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  width: 100%;
+  color: black;
+}
+.software-projects p,
+.cta p {
+  color: white;
+  font-size: 20px;
+  font-family: "Quicksand", Helvetica, sans-serif;
+}
+.projects p {
+  color: black;
+  font-size: 20px;
+  font-family: "Quicksand", Helvetica, sans-serif;
+}
+/* Call to action Section */
+.cta {
+  background-color: rgb(16, 86, 0);
+  padding: 20px;
+  text-align: center;
+}
+.cta a {
+  position: relative;
+  font-family: "Quicksand", Helvetica, sans-serif;
+  font-size: 20px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 30px;
+  padding: 20px;
+  margin-top: 10px; /* Add margin to the top */
+  display: inline-block;
+  text-decoration: none;
+  transition: background-color 0.3s ease; /* Add transition for smooth effect */
+}
+
+.cta a::before {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid white;
+  transform: translateY(-50%);
+  transition: border-left-color 0.3s ease; /* Add transition for arrow color change */
+}
+
+.cta a:hover {
+  background-color: white;
+  border-color: white;
+  color: black;
+}
+/* Footer Styles */
+footer {
+  width: 100%;
+  min-height: 15vh; /* Ensure footer covers entire viewport height */
+}
+footer ul {
+  display: flex;
+  list-style-type: none;
+  padding: 30px;
+}
+
+footer li {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+footer li {
+  font-family: "Quicksand", Helvetica, sans-serif;
+  list-style-type: none;
+  font-size: 20px;
+  color: white;
+}
+/* Apply hover effect to the last three children of li */
+footer li:nth-last-child(-n + 3):hover {
+  display: flex;
+  justify-content: flex-end;
+  transform: scale(1.4);
+  transition: transform 0.5s ease-in-out;
+}
+/* Apply underline effect to the first five child li elements */
+footer li:nth-child(-n + 5) {
+  position: relative; /* Ensure positioning context */
+}
+
+footer li:nth-child(-n + 5)::after {
+  content: ""; /* Create pseudo-element for the underline */
+  position: absolute; /* Position relative to the li */
+  bottom: 0; /* Place at the bottom */
+  left: 0%; /* Start from the center */
+  width: 0; /* Initially no width */
+  height: 2px; /* Height of the underline */
+  background-color: rgb(16, 86, 0); /* Color of the underline */
+  transition: width 0.5s ease; /* Smooth transition for width */
+}
+
+footer li:nth-child(-n + 5):hover::after {
+  width: 100%; /* Shift width to 100% on hover */
+  left: 0; /* Shift starting position to left */
+}
+footer li:hover {
+  cursor: pointer;
+}
+
+footer a {
+  color: black;
+  text-decoration: none;
+}
