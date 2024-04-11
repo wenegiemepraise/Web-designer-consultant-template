@@ -1,0 +1,280 @@
+/* Main styles */
+body {
+  background: linear-gradient(
+    90deg,
+    rgba(224, 243, 220, 1) 0%,
+    rgba(215, 241, 214, 1) 35%,
+    rgba(225, 247, 222, 1) 100%
+  );
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+/* Navbar Styles */
+nav h1 a {
+  color: rgb(16, 86, 0);
+}
+
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+nav li {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: "Quicksand", Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+/* Apply hover effect to the last three children of li */
+nav li:nth-last-child(-n + 3):hover {
+  transform: scale(1.4);
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Apply underline effect to the first five child li elements */
+nav li:nth-child(-n + 5) {
+  position: relative;
+}
+
+nav li:nth-child(-n + 5)::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0%;
+  width: 0;
+  height: 2px;
+  background-color: rgb(16, 86, 0);
+  transition: width 0.5s ease;
+}
+
+nav li:nth-child(-n + 5):hover::after {
+  width: 100%;
+  left: 0;
+}
+
+nav li:hover {
+  cursor: pointer;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+}
+
+/* Styles for about section */
+.webwise {
+  margin-top: 60px;
+  display: flex;
+  background-color: rgba(18, 57, 11, 1);
+  padding-left: 30px;
+}
+
+/* Text Content Styles */
+.about {
+  flex: 1;
+  padding-left: 30px;
+}
+
+.about h4 {
+  color: gold;
+  font-size: 35px;
+  font-family: "Quicksand", Helvetica, sans-serif;
+}
+
+.about h3 {
+  color: white;
+  font-size: 50px;
+  font-family: "Quicksand", Helvetica, sans-serif;
+}
+
+.about p {
+  color: white;
+  font-size: 20px;
+  font-family: "Quicksand", Helvetica, sans-serif;
+}
+
+/* Lottie Animation Styles */
+.about-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-img iframe {
+  border: none;
+  height: 100%;
+  width: 100%;
+  max-width: 1700px;
+  max-height: 1700px;
+}
+
+/* Our-mission styles */
+.webwise-mission {
+  margin-top: 60px;
+  display: flex;
+  padding-left: 30px;
+  overflow: hidden;
+}
+
+/* Text Content Styles */
+.our-mission {
+  flex: 1;
+  margin-bottom: 30px;
+  padding-right: 30px;
+}
+
+.our-mission h3 {
+  color: black;
+  font-size: 35px;
+  font-family: "Quicksand", Helvetica, sans-serif;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+.our-mission h4 {
+  color: gold;
+  font-size: 35px;
+  font-family: "Quicksand", Helvetica, sans-serif;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+.our-mission p {
+  color: black;
+  font-size: 20px;
+  font-family: "Quicksand", Helvetica, sans-serif;
+  padding-right: 20px;
+}
+.mission-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mission-img iframe {
+  border: none;
+  height: 100%;
+  width: 100%;
+  max-width: 1700px;
+  max-height: 1700px;
+  padding-right: 60px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav ul {
+    margin-top: 10px;
+  }
+
+  nav li {
+    margin: 5px;
+  }
+}
+.webwise,
+.webwise-mission {
+  padding-left: 10px;
+}
+
+.banner {
+  background-color: rgba(18, 57, 11, 1);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+  font-family: "Quicksand", Helvetica, sans-serif;
+}
+
+.text-container {
+  text-align: center;
+}
+
+.number {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.banner p {
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+/* Footer Styles */
+footer {
+  width: 100%;
+}
+footer ul {
+  display: flex;
+  list-style-type: none;
+  padding: 30px;
+}
+
+footer li {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+footer li {
+  font-family: "Quicksand", Helvetica, sans-serif;
+  list-style-type: none;
+  font-size: 20px;
+  color: black;
+}
+/* Apply hover effect to the last three children of li */
+footer li:nth-last-child(-n + 3):hover {
+  display: flex;
+  justify-content: flex-end;
+  transform: scale(1.4);
+  transition: transform 0.5s ease-in-out;
+}
+/* Apply underline effect to the first five child li elements */
+footer li:nth-child(-n + 5) {
+  position: relative; /* Ensure positioning context */
+}
+
+footer li:nth-child(-n + 5)::after {
+  content: ""; /* Create pseudo-element for the underline */
+  position: absolute; /* Position relative to the li */
+  bottom: 0; /* Place at the bottom */
+  left: 0%; /* Start from the center */
+  width: 0; /* Initially no width */
+  height: 2px; /* Height of the underline */
+  background-color: rgba(18, 57, 11, 1); /* Color of the underline */
+  transition: width 0.5s ease; /* Smooth transition for width */
+}
+
+footer li:nth-child(-n + 5):hover::after {
+  width: 100%; /* Shift width to 100% on hover */
+  left: 0; /* Shift starting position to left */
+}
+footer li:hover {
+  cursor: pointer;
+}
+
+footer a {
+  color: black;
+  text-decoration: none;
+}

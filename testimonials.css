@@ -1,0 +1,215 @@
+/* Main styles */
+body {
+  background: linear-gradient(
+    90deg,
+    rgba(224, 243, 220, 1) 0%,
+    rgba(215, 241, 214, 1) 35%,
+    rgba(225, 247, 222, 1) 100%
+  );
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+/* Navbar Styles */
+nav h1 a {
+  color: rgb(16, 86, 0);
+}
+
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between; /* Adjusted justify-content */
+  align-items: center; /* Align items vertically */
+  margin: 20px;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+nav li {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+nav li {
+  font-family: "Quicksand", Helvetica, sans-serif;
+  list-style-type: none;
+  font-size: 20px;
+}
+/* Apply hover effect to the last three children of li */
+nav li:nth-last-child(-n + 3):hover {
+  transform: scale(1.4);
+  transition: transform 0.5s ease-in-out;
+}
+/* Apply underline effect to the first five child li elements */
+nav li:nth-child(-n + 5) {
+  position: relative; /* Ensure positioning context */
+}
+
+nav li:nth-child(-n + 5)::after {
+  content: ""; /* Create pseudo-element for the underline */
+  position: absolute; /* Position relative to the li */
+  bottom: 0; /* Place at the bottom */
+  left: 0%; /* Start from the center */
+  width: 0; /* Initially no width */
+  height: 2px; /* Height of the underline */
+  background-color: rgb(16, 86, 0); /* Color of the underline */
+  transition: width 0.5s ease; /* Smooth transition for width */
+}
+
+nav li:nth-child(-n + 5):hover::after {
+  width: 100%; /* Shift width to 100% on hover */
+  left: 0; /* Shift starting position to left */
+}
+nav li:hover {
+  cursor: pointer;
+}
+nav a {
+  color: black;
+  text-decoration: none;
+}
+/* General Styles */
+h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  width: 100%;
+  text-align: center;
+}
+/* Main Content Styles */
+.testimonials {
+  text-align: center;
+  padding: 50px 0;
+  overflow: hidden;
+}
+
+.testimonials .swiper-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 -10px; /* Adjust to counteract margin on individual items */
+}
+
+.swiper-slide {
+  width: 230px; /* Set a fixed width */
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgb(16, 86, 0);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px 10px;
+  font-family: "Quicksand", Helvetica, sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.swiper-slide img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+.swiper-slide p {
+  margin-bottom: 10px;
+}
+
+.client-name {
+  font-weight: bold;
+}
+
+/*Past Experience Styles */
+.companies {
+  text-align: center;
+  padding: 40px;
+}
+
+.companies ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.companies ul li {
+  margin: 10px;
+}
+
+.companies ul li img {
+  width: 150px;
+  height: auto; /* Maintain aspect ratio */
+  margin: 15px;
+}
+/* Footer Styles */
+footer {
+  background-color: rgba(18, 57, 11, 1);
+  width: 100%;
+  min-height: 15vh; /* Ensure footer covers entire viewport height */
+}
+footer ul {
+  display: flex;
+  list-style-type: none;
+  padding: 30px;
+}
+
+footer li {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+footer li {
+  font-family: "Quicksand", Helvetica, sans-serif;
+  list-style-type: none;
+  font-size: 20px;
+  color: white;
+}
+/* Apply hover effect to the last three children of li */
+footer li:nth-last-child(-n + 3):hover {
+  display: flex;
+  justify-content: flex-end;
+  transform: scale(1.4);
+  transition: transform 0.5s ease-in-out;
+}
+/* Apply underline effect to the first five child li elements */
+footer li:nth-child(-n + 5) {
+  position: relative; /* Ensure positioning context */
+}
+
+footer li:nth-child(-n + 5)::after {
+  content: ""; /* Create pseudo-element for the underline */
+  position: absolute; /* Position relative to the li */
+  bottom: 0; /* Place at the bottom */
+  left: 0%; /* Start from the center */
+  width: 0; /* Initially no width */
+  height: 2px; /* Height of the underline */
+  background-color: white; /* Color of the underline */
+  transition: width 0.5s ease; /* Smooth transition for width */
+}
+
+footer li:nth-child(-n + 5):hover::after {
+  width: 100%; /* Shift width to 100% on hover */
+  left: 0; /* Shift starting position to left */
+}
+footer li:hover {
+  cursor: pointer;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Madimi+One&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Remix Icons links-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!--Box Icons links-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="contact.css" />
+
+    <!-- Script tag for SMTP.js library for sending emails -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <nav>
+      <h1 class="bebas-neue-regular">
+        <a href="index.html">PW Solutions.</a>
+      </h1>
+      <!-- Clickable Links -->
+      <ul id="nav-ul">
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li>
+          <a><i class="ri-instagram-line" alt="Instagram logo"></i></a>
+        </li>
+        <li>
+          <a><i class="ri-mail-line" alt="Gmail logo"></i></a>
+        </li>
+        <li>
+          <a><i class="ri-linkedin-fill" alt="LinkedIn logo"></i></a>
+        </li>
+      </ul>
+    </nav>
+    <!--Call to Action Section-->
+    <section class="call-to-action">
+      <div class="text-container">
+        <h2>Ready to get started? <br />Send us a message directly!</h2>
+      </div>
+      <div class="lottie-container">
+        <iframe
+          src="https://lottie.host/embed/247ced81-b152-445d-9e09-eb5b6a731a73/lfWp7FfGgt.json"
+        ></iframe>
+      </div>
+    </section>
+    <!--Contact Us section-->
+    <!-- Container div to hold the form -->
+    <div class="container">
+      <!-- Form wrapper div -->
+      <div class="form-wrapper">
+        <!-- Heading for the form -->
+        <h2 class="form-heading">Contact Us!</h2>
+        <!-- Contact form with onsubmit event to call the sendEmail function -->
+        <form class="contact-form" onsubmit="sendEmail(); return false;">
+          <!-- Input field for name -->
+          <input
+            type="text"
+            autocomplete="off"
+            placeholder="Name"
+            class="contact-form-input"
+            id="name"
+          />
+          <!-- Input field for email -->
+          <input
+            type="email"
+            autocomplete="off"
+            placeholder="Email"
+            class="contact-form-input"
+            id="email"
+          />
+          <!-- Input field for subject -->
+          <input
+            type="text"
+            autocomplete="off"
+            placeholder="Subject"
+            class="contact-form-input"
+            id="subject"
+          />
+          <!-- Textarea for message -->
+          <textarea
+            class="contact-form-input contact-form-textarea"
+            placeholder="Message"
+            id="message"
+          ></textarea>
+          <!-- Submit button to send email -->
+          <input type="submit" class="form-submit-btn" value="Send Email" />
+        </form>
+      </div>
+    </div>
+
+    <script src="contact.js"></script>
+  </body>
+</html>
