@@ -53,19 +53,19 @@ function sendEmail() {
   Email.send({
     Host: "smtp.elasticemail.com",
     Username: "praisewenegieme29@gmail.com",
-    Password: "2ED60C92DC83DC3502CFA46C51EFF2895643",
-    SecureToken: "b4bcc3c2-224d-42b7-b3b9-36a5f2cb5f7b",
+    Password: "517D3EB0FE44631554AFF7BF1F0A0B839A98",
+    SecureToken: "01a4aa70-63f9-47bb-ab05-03e459db4ecc",
     To: "praisewenegieme29@gmail.com",
     From: "praisewenegieme29@gmail.com",
     Subject: "New Contact Form Enquiry",
     Body:
       "Message: " +
       message +
-      "\nName: " +
+      "\n Name: " +
       name +
       " Email: " +
       email +
-      "\nSubject: " +
+      "\n Subject: " +
       subject,
   }).then(() => {
     // Display success message after email is sent
