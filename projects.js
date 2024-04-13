@@ -6,10 +6,6 @@ window.addEventListener("DOMContentLoaded", () => {
     reset: true,
   });
 
-  sr.reveal(".projects h2", { origin: "left", delay: 100 });
-  sr.reveal(".projects h5", { origin: "left", delay: 100 });
-  sr.reveal(".projects p", { origin: "left", delay: 100 });
-  sr.reveal(".software-projects h2", { origin: "right", delay: 100 });
-  sr.reveal(".software-projects h5", { origin: "right", delay: 100 });
-  sr.reveal(".software-projects p", { origin: "right", delay: 100 });
+  sr.reveal(".left-swiper", { origin: "left", delay: 100 });
+  sr.reveal(".right-swiper", { origin: "right", delay: 100 });
 });
