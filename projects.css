@@ -78,6 +78,39 @@ nav a {
   color: black;
   text-decoration: none;
 }
+/* Media query for responsive design */
+@media only screen and (max-width: 768px) {
+  html,
+  body {
+    overflow-x: hidden; /* Hide horizontal overflow for the entire document */
+  }
+
+  nav {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align items */
+    width: 100%; /* Ensure nav takes full width */
+    overflow-x: hidden; /* Hide horizontal overflow */
+    padding: 0 20px; /* Add padding to create space within the container */
+    box-sizing: border-box; /* Include padding in the total width */
+  }
+
+  nav ul {
+    margin-top: 20px; /* Add space between logo and links */
+    flex-direction: column; /* Stack links vertically */
+    padding: 0; /* Reset padding */
+  }
+
+  nav li {
+    margin: 10px 0; /* Adjust spacing between links */
+    text-align: center; /* Center align text */
+  }
+
+  nav h1 {
+    margin-bottom: 20px; /* Add space below main heading */
+    text-align: center; /* Center align main heading */
+  }
+}
+
 /*Section Heading Styles */
 .heading h2 {
   font-family: "Bebas Neue", sans-serif;
@@ -89,6 +122,12 @@ nav a {
   color: black;
 }
 /*Main Content Styles */
+.left-swiper,
+.right-swiper {
+  max-width: 50%; /* Adjust this value as needed */
+  padding: 0 20px; /* Add padding to prevent content from touching the edges */
+  box-sizing: border-box; /* Include padding in the element's total width */
+}
 .software-projects {
   background-color: rgb(16, 86, 0);
 }
@@ -234,4 +273,40 @@ footer li:hover {
 footer a {
   color: black;
   text-decoration: none;
+}
+/* Media query for responsive design */
+@media only screen and (max-width: 768px) {
+  footer {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align items */
+    width: 100%; /* Ensure footer takes full width */
+    overflow-x: hidden; /* Hide horizontal overflow */
+    padding: 0 20px; /* Add padding to create space within the container */
+    box-sizing: border-box; /* Include padding in the total width */
+  }
+
+  footer ul {
+    margin-top: 20px; /* Add space between links */
+    flex-direction: column; /* Stack links vertically */
+    padding: 0; /* Reset padding */
+  }
+
+  footer li {
+    margin: 10px 0; /* Adjust spacing between links */
+    text-align: center; /* Center align text */
+    position: relative; /* Ensure positioning context */
+  }
+
+  footer li:not(:last-child) {
+    margin-bottom: 10px; /* Add space between list items */
+  }
+
+  footer li a {
+    color: black;
+    text-decoration: none; /* Remove default underline */
+  }
+
+  footer li a:hover::after {
+    width: 100%; /* Shift width to 100% on hover */
+  }
 }
