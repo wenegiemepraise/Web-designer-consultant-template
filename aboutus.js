@@ -1,32 +1,42 @@
-import CountUp from "countup.js";
+// Import necessary modules
+import { CountUp } from "./js/countUp.min.js";
+import ScrollReveal from "scrollreveal";
 
-//Scroll Reveal animation
-window.addEventListener("DOMContentLoaded", () => {
-  const sr = ScrollReveal({
-    distance: "200px",
-    duration: 2000,
-    reset: true,
+// Initialize ScrollReveal animation
+const sr = ScrollReveal({
+  distance: "200px",
+  duration: 2000,
+  reset: true,
+});
+
+// Initialize CountUp animations
+document.addEventListener("DOMContentLoaded", () => {
+  const countUpClients = new CountUp("clientsCount", 100, {
+    enableScrollSpy: true,
+  });
+  const countUpRetention = new CountUp("RetentionCount", 95, {
+    enableScrollSpy: true,
+  });
+  const countUpSatisfaction = new CountUp("satisfactionCount", 98, {
+    enableScrollSpy: true,
   });
 
+  // Check if all CountUp instances were successfully created before starting them
+  if (
+    !countUpClients.error &&
+    !countUpRetention.error &&
+    !countUpSatisfaction.error
+  ) {
+    countUpClients.start();
+    countUpRetention.start();
+    countUpSatisfaction.start();
+  } else {
+    console.error("Error initializing CountUp instances");
+  }
+
+  // Initialize ScrollReveal animation
   sr.reveal(".about", { origin: "left", delay: 100 });
   sr.reveal(".about-img", { origin: "left", delay: 100 });
   sr.reveal(".our-mission", { origin: "right", delay: 100 });
   sr.reveal(".mission-img", { origin: "right", delay: 100 });
 });
-
-//Count Animation
-// Function to initialize count up animation
-window.onload = function () {
-  initializeCountUp("clientsCount", 100);
-  initializeCountUp("RetentionCount", 95);
-  initializeCountUp("satisfactionCount", 98);
-};
-
-function initializeCountUp(targetId, endValue) {
-  const countUp = new CountUp(targetId, endValue);
-  if (!countUp.error) {
-    countUp.start();
-  } else {
-    console.error(countUp.error);
-  }
-}
