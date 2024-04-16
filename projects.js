@@ -6,6 +6,6 @@ window.addEventListener("DOMContentLoaded", () => {
     reset: true,
   });
 
-  sr.reveal(".left-swiper", { origin: "left", delay: 100 });
-  sr.reveal(".right-swiper", { origin: "right", delay: 100 });
+  sr.reveal(".left-swiper", { origin: "left", delay: 100 }); //Makes it slide in from the left
+  sr.reveal(".right-swiper", { origin: "right", delay: 100 }); //Makes it slide in from the right
 });

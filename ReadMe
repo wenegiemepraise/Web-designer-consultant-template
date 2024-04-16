@@ -16,16 +16,14 @@ https://inorganik.github.io/countUp.js/
 https://smtpjs.com/
 https://www.typeitjs.com/
 
+Relevant documentations for these libraries:
+https://scrollrevealjs.org/guide/customization.html
+https://www.typeitjs.com/docs/vanilla/quick-start/
+
 Logo:
 All logo rights are reserved by there respective companies
 
 Issues:
-
-Add scroll Reveal to testimonials page
-
-User cards are not flexing correctly
-
-Add a drop down menu for scalability for the nav bar (for all pages)
 
 Add a count up feature in aboutus.html -> implement it with the library
 
