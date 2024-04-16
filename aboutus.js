@@ -1,3 +1,5 @@
+import CountUp from "countup.js";
+
 //Scroll Reveal animation
 window.addEventListener("DOMContentLoaded", () => {
   const sr = ScrollReveal({
@@ -14,16 +16,17 @@ window.addEventListener("DOMContentLoaded", () => {
 
 //Count Animation
 // Function to initialize count up animation
+window.onload = function () {
+  initializeCountUp("clientsCount", 100);
+  initializeCountUp("RetentionCount", 95);
+  initializeCountUp("satisfactionCount", 98);
+};
+
 function initializeCountUp(targetId, endValue) {
-  const countUp = new CountUp(targetId, endValue, { enableScrollSpy: true }); // Initialize CountUp with scroll spy enabled
+  const countUp = new CountUp(targetId, endValue);
   if (!countUp.error) {
-    countUp.start(); // Start the CountUp animation
+    countUp.start();
   } else {
-    console.error(countUp.error); // Log any errors to the console
+    console.error(countUp.error);
   }
 }
-
-// Call the function for each target element
-initializeCountUp("clientsCount", 100);
-initializeCountUp("RetentionCount", 98);
-initializeCountUp("satisfactionCount", 95);
