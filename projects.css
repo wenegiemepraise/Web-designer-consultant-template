@@ -124,7 +124,7 @@ nav a {
 /*Main Content Styles */
 .left-swiper,
 .right-swiper {
-  max-width: 50%; /* Adjust this value as needed */
+  max-width: 70%;
   padding: 0 20px; /* Add padding to prevent content from touching the edges */
   box-sizing: border-box; /* Include padding in the element's total width */
 }
