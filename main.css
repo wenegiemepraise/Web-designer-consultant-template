@@ -1,0 +1,315 @@
+/* Main styles */
+body {
+  background: linear-gradient(
+    90deg,
+    rgba(224, 243, 220, 1) 0%,
+    rgba(215, 241, 214, 1) 35%,
+    rgba(225, 247, 222, 1) 100%
+  );
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+/* Navbar Styles */
+nav h1 a {
+  color: rgb(16, 86, 0);
+}
+
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between; /* Adjusted justify-content */
+  align-items: center; /* Align items vertically */
+  margin: 20px;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+nav li {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+nav li {
+  font-family: "Quicksand", Helvetica, sans-serif;
+  list-style-type: none;
+  font-size: 20px;
+}
+/* Apply hover effect to the last three children of li */
+nav li:nth-last-child(-n + 3):hover {
+  transform: scale(1.4);
+  transition: transform 0.5s ease-in-out;
+}
+/* Apply underline effect to the first five child li elements */
+nav li:nth-child(-n + 5) {
+  position: relative; /* Ensure positioning context */
+}
+
+nav li:nth-child(-n + 5)::after {
+  content: ""; /* Create pseudo-element for the underline */
+  position: absolute; /* Position relative to the li */
+  bottom: 0; /* Place at the bottom */
+  left: 0%; /* Start from the center */
+  width: 0; /* Initially no width */
+  height: 2px; /* Height of the underline */
+  background-color: rgb(16, 86, 0); /* Color of the underline */
+  transition: width 0.5s ease; /* Smooth transition for width */
+}
+
+nav li:nth-child(-n + 5):hover::after {
+  width: 100%; /* Shift width to 100% on hover */
+  left: 0; /* Shift starting position to left */
+}
+nav li:hover {
+  cursor: pointer;
+}
+nav a {
+  color: black;
+  text-decoration: none;
+}
+/* Media query for responsive design */
+@media only screen and (max-width: 768px) {
+  html,
+  body {
+    overflow-x: hidden; /* Hide horizontal overflow for the entire document */
+  }
+
+  nav {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align items */
+    width: 100%; /* Ensure nav takes full width */
+    overflow-x: hidden; /* Hide horizontal overflow */
+    padding: 0 20px; /* Add padding to create space within the container */
+    box-sizing: border-box; /* Include padding in the total width */
+  }
+
+  nav ul {
+    margin-top: 20px; /* Add space between logo and links */
+    flex-direction: column; /* Stack links vertically */
+    padding: 0; /* Reset padding */
+  }
+
+  nav li {
+    margin: 10px 0; /* Adjust spacing between links */
+    text-align: center; /* Center align text */
+  }
+
+  nav h1 {
+    margin-bottom: 20px; /* Add space below main heading */
+    text-align: center; /* Center align main heading */
+  }
+}
+/* Main Content Styles */
+
+/*Container Styles */
+section h1 {
+  font-family: "Bebas Neue", Helvetica, sans-serif;
+  font-size: 50px;
+  margin: 20px;
+  max-width: 100%;
+}
+section h3 {
+  font-family: "Quicksand", Helvetica, sans-serif;
+  font-size: 35px;
+  margin: 20px;
+  max-width: 100%;
+}
+section .name {
+  color: rgb(16, 86, 0);
+}
+
+/* Section Styles */
+section {
+  margin-top: 60px;
+  display: flex;
+}
+
+/* Text Content Styles */
+.text-content {
+  flex: 1; /* Take up remaining space */
+  padding-right: 20px; /* Add some space between text and animation */
+}
+
+/* Lottie Animation Styles */
+.lottie-container {
+  flex: 1; /* Take up remaining space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.conversationlotti {
+  border: none;
+  height: 100%; /* Fill the container vertically */
+  width: 100%; /* Fill the container horizontally */
+  max-width: 1700px; /* Limit maximum width */
+  max-height: 1700px; /* Limit maximum height */
+}
+
+/* FAQ Section */
+.faq {
+  display: flex;
+  flex-direction: column; /* Arrange items in a column */
+  align-items: center; /* Center align items horizontally */
+  padding: 20px;
+  background-color: rgba(18, 57, 11, 1);
+}
+
+h2 {
+  font-family: "Quicksand", Helvetica, sans-serif;
+  color: white;
+  margin-bottom: 20px; /* Add margin at the bottom to separate from FAQ items */
+}
+
+/* FAQ Container */
+.faq-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: space-between;
+  max-width: 800px;
+  max-width: 100%; /* Ensure FAQ items adapt to smaller screens */
+  justify-content: center;
+}
+
+/* FAQ Item */
+.faq-item {
+  width: 20%; /* Adjust item width based on the desired layout */
+  margin: 0 15px; /* Adjust spacing between items */
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 45%; /* Adjust item width for smaller screens */
+  max-width: 300px; /* Set maximum width for FAQ items */
+  margin: 0 10px; /* Adjust spacing between items */
+}
+
+.faq-item h3 {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.faq-item p {
+  font-size: 1rem;
+  color: white;
+  font-family: "Quicksand", Helvetica, sans-serif;
+}
+.faq-item a {
+  color: lightgreen;
+}
+.faq-item a:hover {
+  transform: scale(1.4);
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Call to action styles */
+.call-to-action {
+  display: flex;
+  margin-bottom: 20px;
+  padding-top: 40px;
+  flex-direction: column; /* Stack elements vertically on smaller screens */
+  align-items: center; /* Center align items */
+  text-align: center; /* Center align text */
+}
+
+.call-to-action h2 {
+  margin-left: 50px;
+  color: black;
+  font-size: 50px;
+}
+.call-to-action h3 {
+  font-family: "Madimi One", Helvetica, sans-serif;
+  margin-left: 50px;
+  font-size: 30px;
+}
+iframe {
+  border: none;
+  width: 450px;
+  height: 450px;
+  max-width: 100%; /* Ensure video iframe adapts to smaller screens */
+}
+.call-to-action a {
+  margin-left: 50px;
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  background-color: rgba(18, 57, 11, 1);
+  border: 1px solid transparent;
+  line-height: 1.4;
+  padding: 12px 30px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 30px;
+  font-family: "Quicksand", Helvetica, sans-serif;
+}
+.call-to-action a:hover {
+  background: transparent;
+  border: 1px solid darkgreen;
+  color: darkgreen;
+}
+/* Footer Styles */
+footer {
+  background-color: rgba(18, 57, 11, 1);
+  width: 100%;
+  min-height: 15vh; /* Ensure footer covers entire viewport height */
+}
+footer ul {
+  display: flex;
+  list-style-type: none;
+  padding: 30px;
+}
+
+footer li {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+footer li {
+  font-family: "Quicksand", Helvetica, sans-serif;
+  list-style-type: none;
+  font-size: 20px;
+  color: white;
+}
+/* Apply hover effect to the last three children of li */
+footer li:nth-last-child(-n + 3):hover {
+  display: flex;
+  justify-content: flex-end;
+  transform: scale(1.4);
+  transition: transform 0.5s ease-in-out;
+}
+/* Apply underline effect to the first five child li elements */
+footer li:nth-child(-n + 5) {
+  position: relative; /* Ensure positioning context */
+}
+
+footer li:nth-child(-n + 5)::after {
+  content: ""; /* Create pseudo-element for the underline */
+  position: absolute; /* Position relative to the li */
+  bottom: 0; /* Place at the bottom */
+  left: 0%; /* Start from the center */
+  width: 0; /* Initially no width */
+  height: 2px; /* Height of the underline */
+  background-color: white; /* Color of the underline */
+  transition: width 0.5s ease; /* Smooth transition for width */
+}
+
+footer li:nth-child(-n + 5):hover::after {
+  width: 100%; /* Shift width to 100% on hover */
+  left: 0; /* Shift starting position to left */
+}
+footer li:hover {
+  cursor: pointer;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
