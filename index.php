@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Madimi+One&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Remix Icons links-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!--Box Icons links-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!--Personal Stylesheet-->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Landing Page</title>
+  </head>
+  <body>
+    <!-- Add this form to collect user's name -->
+    <form action="visit.php" method="post">
+      <label for="name">Enter your name:</label>
+      <input type="text" id="name" name="name" required />
+      <input type="submit" value="Submit" />
+    </form>
+    <!-- Navbar Section -->
+    <nav>
+      <h1 class="bebas-neue-regular">
+        <a href="index.html">PW Solutions.</a>
+      </h1>
+      <!-- Clickable Links -->
+      <ul id="nav-ul">
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li>
+          <a><i class="ri-instagram-line" alt="Instagram logo"></i></a>
+        </li>
+        <li>
+          <a><i class="ri-mail-line" alt="Gmail logo"></i></a>
+        </li>
+        <li>
+          <a><i class="ri-linkedin-fill" alt="LinkedIn logo"></i></a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <section>
+      <!-- Text Content -->
+      <div class="text-content">
+        <div class="container">
+          <h3>
+            Hi my name is <span class="name">Praise Wenegieme</span>,<br />I am
+            the founder of PW Solutions. It's an innovative web design
+            consultancy start-up!
+          </h3>
+          <h1><span class="titles"></span></h1>
+        </div>
+      </div>
+
+      <!-- Lottie Animation -->
+      <div class="lottie-container">
+        <iframe
+          src="https://lottie.host/embed/a012ae7f-315e-4331-912a-b9fa70be7c23/P8e9UA1H5F.json"
+          class="conversationlotti"
+        ></iframe>
+      </div>
+    </section>
+    <!--The FAQ section-->
+    <section class="faq">
+      <div class="faq-header">
+        <h2>Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-container">
+        <!--Container for the first FAQ-->
+        <div class="faq-item" id="faq-1">
+          <hr />
+          <h3>How experienced is your team?</h3>
+          <p>
+            Our team is highly experienced in various domains. We have a diverse
+            group of professionals who bring a wealth of knowledge and skills to
+            the table.
+          </p>
+        </div>
+        <!--Container for the second FAQ-->
+        <div class="faq-item" id="faq-1">
+          <hr />
+          <h3>
+            Can you provide examples of websites you've designed in the past?
+          </h3>
+          <p>
+            Yes, absolutely! We take pride in showcasing our previous work to
+            demonstrate our expertise and style. Please visit our
+            <a href="projects.html">Projects</a>
+            section to explore a selection of work we've completed in the past.
+            These examples will give you insight into our capabilities and the
+            quality of work you can expect from us.
+          </p>
+        </div>
+        <!--Container for the third FAQ-->
+        <div class="faq-item" id="faq-2">
+          <hr />
+          <h3>
+            Do you provide SEO services or assistance with content creation?
+          </h3>
+          <p>
+            Yes, we offer comprehensive SEO services to optimize your website's
+            visibility and rankings on search engines. Our team can assist you
+            with keyword research, on-page optimization, technical SEO, and
+            content strategy to enhance your online presence.
+          </p>
+        </div>
+        <!--Container for the fourth FAQ-->
+        <div class="faq-item" id="faq-2">
+          <hr />
+          <h3>What measures do you take to ensure website security?</h3>
+          <p>
+            At PW Solutions, we prioritize website security to safeguard our
+            clients' digital assets and protect user data. We employ a
+            multi-layered approach to ensure comprehensive security.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--Create a Call To Action section-->
+    <section class="call-to-action">
+      <div>
+        <h2>Get In Touch</h2>
+        <h3>
+          Discover how PW Solutions can create digital experiences that
+          transforms and optimises your business forever.
+        </h3>
+        <a href="">Hire a Service</a>
+      </div>
+      <iframe
+        src="https://lottie.host/embed/1abb15dc-7a50-46e8-a34c-d58cd7013994/2pcIqLMQuk.json"
+      ></iframe>
+    </section>
+    <!--A footer that contains all the navbar links-->
+    <footer>
+      <ul>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li>
+          <a><i class="ri-instagram-line" alt="Instagram logo"></i></a>
+        </li>
+        <li>
+          <a><i class="ri-mail-line" alt="Gmail logo"></i></a>
+        </li>
+        <li>
+          <a><i class="ri-linkedin-fill" alt="LinkedIn logo"></i></a>
+        </li>
+      </ul>
+    </footer>
+
+    <!--Typing animation-->
+    <!--Typeit library docs for usage-->
+    <!--https://www.typeitjs.com/docs/vanilla/quick-start/-->
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+
+    <!--Scroll Reveal animation-->
+    <!--Scroll Reveal docs for usage-->
+    <!--https://scrollrevealjs.org/guide/customization.html-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--Personal Scripts-->
+    <script src="script.js"></script>
+  </body>
+</html>
