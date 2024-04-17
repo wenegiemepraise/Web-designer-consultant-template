@@ -33,10 +33,6 @@ body {
   font-family: "Quicksand", Helvetica, sans-serif;
   display: block; /* Show modal by default */
 }
-
-.opt-out {
-  margin-top: 10px;
-}
 .modal-content input[type="submit"] {
   background-color: rgb(16, 86, 0); /* Dark green */
   color: #fff; /* White text */
@@ -49,6 +45,9 @@ body {
 
 .modal-content input[type="submit"]:hover {
   background-color: #0e5a00; /* Darken the green on hover */
+}
+.form-group {
+  margin-top: 10px;
 }
 /* Heading Styles */
 h1 {
