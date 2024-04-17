@@ -13,12 +13,9 @@ if(isset($_POST['name'])) {
         setcookie("visit_time", time(), time() + 3600, "/");
     }
 
-    // Redirect to a different page based on user's decision
-    if ($optOut) {
-        header("Location: main.html");
-    } else {
-        header("Location: main.html");
-    }
+    //Redirect to webpage.
+    header("Location: main.html");
+    
     exit();
 } else {
     echo "Name not submitted!";
