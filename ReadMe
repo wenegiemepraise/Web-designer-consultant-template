@@ -19,6 +19,9 @@ Relevant documentations for these libraries:
 https://scrollrevealjs.org/guide/customization.html
 https://www.typeitjs.com/docs/vanilla/quick-start/
 
+PHP docs:
+https://www.php.net/manual/en/features.cookies.php
+
 Icons:
 https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css
 https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css
@@ -26,8 +29,11 @@ https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css
 Logo:
 All logo rights are reserved by there respective companies
 
-Issues:
-
-Add a count up feature in aboutus.html -> implement it with the library
-
-Add a newsletter option to the contact page
+Files:
+index.html, styles.css
+main.html, main.css, main.js
+aboutus.html, aboutus.css, aboutus.js
+services.html, services.css
+projects.html, projects.css, projects.js
+testimonials.html, testimonials.css
+contactus.html, contact.css, contact.js
